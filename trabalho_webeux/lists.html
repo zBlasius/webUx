@@ -1,0 +1,291 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/_format.css">
+	<title>Explicando-o-html</title>
+
+</head>
+
+<body>
+	<div id="interface">
+		<header id="cabecalho">
+			<br>
+			<h1> Explicando o HTML</h1>
+		<figure class="fotoAbertura">
+			<img src="imagens/html3.png" title="HTML: aprendendo a linguagem de marcação" alt="Ops...">
+			<figcaption id="htmlImage">
+			<p>HTML: a linguagem de marcação</p>
+			</figcaption>
+		</figure>	
+		</header>
+		<hgroup>
+		<nav id="menu">
+			<h2>Menu Principal</h2>
+			<ul>
+				<hr>
+				<li id="Caminho1"><a href="introduction.html">Ir para o Início</a></li>
+				<hr>
+				<li id="Caminho1">Explicando o CSS</li>
+				<hr>
+				<li id="Caminho1"> <a href="image.html" > Próxima Página </a></li>
+				<hr>
+			</ul>
+		</nav>
+		</hgroup>
+	</div>
+
+	<nav id="menu-abas">
+	<ul> 
+		<li><a href="introduction.html"> Introdução </a> </li>
+		<li><a href="structure.html"> Estruturas </a> </li>
+		<li><a href="bookmarks.html"> Marcadores </a> </li>
+		<li><a href="header.html"> cabeçalhos </a> </li>
+		<li><a href="background.html"> background </a></li>
+		<li><a href="image.html"> Imagens </a> </li>
+		<li> <a href="links.html"> Links </a> </li>
+		<li> <a href="lists.html"> Lists </a> </li>
+	</ul>
+	</nav>
+
+	<section id="introducao">
+
+	<h2> 9. Listas </h2>
+
+		<p>No html existem dois tipos de listas,:
+
+<p style="font-weight: bolder;"> Ordered lists (listas ordenadas) = ol </br> 
+
+<p style="font-weight: bolder;"> Unordered lists (listas não ordenadas) = ul </br> 
+
+<p>É importante resaltar que as listas devem estar dentro da tag &lt; nav &gt;, além disso, dentro das listas existem os itens (&lt; li &gt;).
+
+<h1> Listas ordenadas </h1>
+
+<pre class="formatacaoAreaCodigo"> 
+	
+	&lt;nav>
+	&lt;h3>Resultado&lt;/h3>
+	&lt;ol>
+		&lt;li> Home &lt;/li>
+		&lt;li> Especificações &lt;/li>
+		&lt;li> Fotos &lt;/li>
+		&lt;li> Mutimídia &lt;/li>
+		&lt;li> Fale conosco &lt;/li>
+	&lt;/ol>
+	&lt;/nav>
+
+</pre>
+
+<nav>
+	<h3>Resultado</h3>
+	<ol>
+		<li> Home </li>
+		<li> Especificações </li>
+		<li> Fotos </li>
+		<li> Mutimídia </li>
+		<li> Fale conosco </li>
+	</ol>
+</nav>
+
+<h2> Listas com letras </h2>
+
+<p> podemos modificar as listas com o atríbuto "type", exemplo: </p>
+
+
+<pre class="formatacaoAreaCodigo"> 
+
+&lt;nav>
+	&lt;h1>Menu Principal&lt;/h1>
+	&lt;ol type="a">
+		&lt;li> Home &lt;/li>
+		&lt;li> Especificações &lt;/li>
+		&lt;li> Fotos &lt;/li>
+		&lt;li> Mutimídia &lt;/li>
+		&lt;li> Fale conosco &lt;/li>
+	&lt;/ol>
+&lt;/nav>
+
+</pre>
+
+
+ 
+
+
+	<nav>
+	<h3>Resultado</h3>
+	<ol type="a">
+		<li> Home </li>
+		<li> Especificações </li>
+		<li> Fotos </li>
+		<li> Mutimídia </li>
+		<li> Fale conosco </li>
+	</ol>
+</nav>
+
+<p> ops*  caso coloque em "A" na tag type, as letras ficarão maiúsculas. </p>
+
+
+
+<pre class="formatacaoAreaCodigo"> 
+	<p> Com números romanos: </p>
+
+	&lt;nav>
+		&lt;h1>Menu Principal&lt;/h1>
+		&lt;ol type="i">
+			&lt;li> Home &lt;/li>
+			&lt;li> Especificações &lt;/li>
+			&lt;li> Fotos &lt;/li>
+			&lt;li> Multimídia &lt;/li>
+			&lt;li> Fale conosco &lt;/li>
+		&lt;/ol>
+	&lt;/nav>
+
+</pre>
+
+ 
+
+
+	<nav>
+	<h3>Resultado</h3>
+	<ol type="i">
+		<li> Home </li>
+		<li> Especificações </li>
+		<li> Fotos </li>
+		<li> Multimídia </li>
+		<li> Fale conosco </li>
+	</ol>
+</nav>
+
+Caso for com "I", os numeros romanos serão em letras maiusculas também.
+
+
+
+
+
+
+<pre class="formatacaoAreaCodigo"> 
+	<p>Caso eu queria uma lista ordenada começando do numero 3 </p>
+	&lt;nav>
+		&lt;h1>Menu Principal&lt;/h1>
+		&lt;ol type="1" start="3">
+			&lt;li> Home &lt;/li>
+			&lt;li> Especificações &lt;/li>
+			&lt;li> Fotos &lt;/li>
+			&lt;li> Mutimídia &lt;/li>
+			&lt;li> Fale conosco &lt;/li>
+		&lt;/ol>
+	&lt;/nav>
+
+</pre>
+
+
+
+	<nav>
+	<h3>Resultado </h3>
+	<ol type="1" start="3">
+		<li> Home </li>
+		<li> Especificações </li>
+		<li> Fotos </li>
+		<li> Mutimídia </li>
+		<li> Fale conosco </li>
+	</ol>
+	</nav>
+
+<p> funciona do mesmo jeito com as letras, onde o atríbuto "start" significa posição da letra, ou seja, start="3" == C </p>
+
+
+
+
+<h1> LISTAS NÃO ORDENADAS </h1>
+
+<p> São listas com símbolos, sem ordem númerica, alfabética ou romana. </br> Exemplo: </p>
+
+
+<pre class="formatacaoAreaCodigo"> 
+
+	&lt;nav>
+		&lt;ul>
+			&lt;li> Home &lt;/li>
+			&lt;li> Especificações &lt;/li>
+			&lt;li> Fotos &lt;/li>
+			&lt;li> Mutimídia &lt;/li>
+			&lt;li> Fale conosco &lt;/li>
+		&lt;/ul>
+	&lt;/nav>
+
+</pre>
+
+Resultado :
+
+
+		<nav >
+		<ul>
+			<li> Home </li>
+			<li> Especificações </li>
+			<li> Fotos </li>
+			<li> Mutimídia </li>
+			<li> Fale conosco </li>
+		</ul>
+	</nav>
+
+	<ul style="margin:40px 0px 50px 50px;">
+	
+	<h3>valores para o type de UL </h3>
+
+		<li type="square">square:  quadrados</li>
+		<li type="circle">circle: circulo com fundo branco</li>
+		<li type="disc">disc: circulo todo preto </li>
+	</ul>
+
+
+<h1> LISTAS DENTRO DE LISTAS </h1>
+
+<p> Podemos fazer listas ul dentro de ol ou vice-versa. Ex: </p>
+
+
+<pre class="formatacaoAreaCodigo"> 
+	&lt;nav>
+		&lt;ul type="a">   // Lista não ordenada
+			&lt;li> Home &lt;/li>
+			&lt;li> Especificações &lt;/li>
+			&lt;li> Fotos &lt;/li>
+				&lt;ol>       // Lista ordenada
+				         &lt;li>músicas&lt;/li>	
+				         &lt;li>videos&lt;/li>
+				&lt;/ol>
+			&lt;li> Mutimídia &lt;/li>
+			&lt;li> Fale conosco &lt;/li>
+		&lt;/ul>
+	&lt;/nav>
+
+</pre>
+
+Resultado :
+
+
+		<nav>
+		<h1></h1>
+		<ul type="a">
+			<li> Home </li>
+			<li> Especificações </li>
+			<li> Fotos </li>
+				<ol>
+				         <li>músicas</li>	
+				         <li>videos</li>
+				</ol>
+			<li> Mutimídia </li>
+			<li> Fale conosco </li>
+		</ul>
+	</nav>
+
+<p> Atríbuto 'type' pode ser aplicados da mesma maneira. </p>
+
+
+	</section>
+	<footer id="rodape">
+		<p>Copyright &copy; by Nathã Correia</p>
+		<p> 2020. Todos os direitos reservados.
+	</footer>
+	</body> 
+	</html>

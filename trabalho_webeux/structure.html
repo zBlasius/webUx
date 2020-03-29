@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/_format.css">
+	<title>Explicando-o-html</title>
+
+</head>
+
+<body>
+	<div id="interface">
+		<header id="cabecalho">
+			<br>
+			<h1> Explicando o HTML</h1>
+		<figure class="fotoAbertura">
+			<img src="imagens/html3.png" title="HTML: aprendendo a linguagem de marcação" alt="Ops...">
+			<figcaption id="htmlImage">
+			<p>HTML: a linguagem de marcação</p>
+			</figcaption>
+		</figure>	
+		</header>
+		<hgroup>
+		<nav id="menu">
+			<h2>Menu Principal</h2>
+			<ul>
+				<hr>
+				<li id="Caminho1"><a href="introduction.html">Ir para o Início</a></li>
+				<hr>
+				<li id="Caminho1">Explicando o CSS</li>
+				<hr>
+				<li id="Caminho1"> <a href="bookmarks.html" >Próxima Página </a></li>
+				<hr>
+			</ul>
+		</nav>
+		</hgroup>
+	</div>
+
+	
+	<nav id="menu-abas">
+	<ul> 
+		<li><a href="introduction.html"> Introdução </a> </li>
+		<li><a href="structure.html"> Estruturas </a> </li>
+		<li><a href="bookmarks.html"> Marcadores </a> </li>
+		<li><a href="header.html"> cabeçalhos </a> </li>
+		<li><a href="background.html"> background </a></li>
+		<li><a href="image.html"> Imagens </a> </li>
+		<li> <a href="links.html"> Links </a> </li>
+		<li> <a href="lists.html"> Lists </a> </li>
+	</ul>
+	</nav>	
+
+<section id="introducao">
+<h2>3. Estruturas de um documento HTML</h2>
+	<p>Todo arquivo em html é composto por os elementos: <b>DOCTYPE, html, head, title e body</b>, por padrão. Esses são as principais marcações que devem ser explicitadas em um documento html. Sem eles, o <b>browser</b> não conseguirá identificar o que estamos construindo no arquivo. Logo abaixo temos um modelo de como desenvolvemos essa estrutura em um arquivo html.</p>
+<pre class="formatacaoAreaCodigo">
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8"/&gt;
+	&lt;title&gt; título-da-pagina-html-no-navegador&lt;/ title&gt;
+&lt;/ head&gt;
+&lt;body&gt;
+&lt;h1&gt;Cabeçalho&lt;/ h1&gt;
+&lt;p&gt;Parágrafo&lt;/ p&gt;
+&lt;/ body&gt;
+&lt;/ html&gt;	
+</code>
+</pre>
+<p>Abaixo desse modelo, encontra-se uma tabela que explica cada tag utilizada.</p>
+<table id="tabela-tags">
+<caption class="modelo-tabela">Tags em um arquivo HTML</caption>
+<tr><td class="inicio">Tag</td><td class="inicio">Funcionalidade</td></tr>
+<tr><td class="tag">!DOCTYPE html</td><td class="texto">Tag que define o formato do arquivo para o browser</td></tr>
+<tr><td class="tag">html</td><td class="texto">Indica a raiz do arquivo em formato HTML</td></tr>
+<tr><td class="tag">head</td><td class="texto">Indica as estruturas de um documento HTML, como links, folhas de estilo ou metadados</td></tr>
+<tr><td class="tag">meta</td><td class="texto">Define qualquer informação de metadados que não podem ser definidos por outros elementos HTML</td></tr>
+<tr><td class="tag">title</td><td class="texto">Define o título que será exibido na página do navegador</td></tr>
+<tr><td class="tag">body</td><td class="texto">Nesta tag, informamos os dados do nosso website, como imagens, textos, vídeos e outros elementos</td></tr>
+</table>
+<p>Para ver essas e outras tags, clique <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element" target="_blank"> <b>aqui</b></b></a>. Nesse link, há detalhes importantes sobre os elementos básicos de um arquivo html apresentados até então, assim como outros que serão esclarecidos em outros tópicos.</p>
+ </section>
+	<footer id="rodape">
+	<p>Copyright &copy; by Nathã Correia</p>
+	<p> 2020. Todos os direitos reservados.
+</footer>
+ </body> 
+ </html>

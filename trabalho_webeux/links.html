@@ -1,0 +1,98 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/_format.css">
+	<title>Explicando-o-html</title>
+
+</head>
+
+<body>
+	<div id="interface">
+		<header id="cabecalho">
+			<br>
+			<h1> Explicando o HTML</h1>
+		<figure class="fotoAbertura">
+			<img src="imagens/html3.png" title="HTML: aprendendo a linguagem de marcação" alt="Ops...">
+			<figcaption id="htmlImage">
+			<p>HTML: a linguagem de marcação</p>
+			</figcaption>
+		</figure>	
+		</header>
+		<hgroup>
+		<nav id="menu">
+			<h2>Menu Principal</h2>
+			<ul>
+				<hr>
+				<li id="Caminho1"><a href="introduction.html">Ir para o Início</a></li>
+				<hr>
+				<li id="Caminho1">Explicando o CSS</li>
+				<hr>
+				<li id="Caminho1"> <a href="image.html" > Próxima Página </a></li>
+				<hr>
+			</ul>
+		</nav>
+		</hgroup>
+	</div>
+
+	<nav id="menu-abas">
+	<ul> 
+		<li><a href="introduction.html"> Introdução </a> </li>
+		<li><a href="structure.html"> Estruturas </a> </li>
+		<li><a href="bookmarks.html"> Marcadores </a> </li>
+		<li><a href="header.html"> cabeçalhos </a> </li>
+		<li><a href="background.html"> background </a></li>
+		<li><a href="image.html"> Imagens </a> </li>
+		<li> <a href="links.html"> Links </a> </li>
+		<li> <a href="lists.html"> Lists </a> </li>
+	</ul>
+	</nav>	
+
+<section id="introducao">
+
+	<h2> 8. Links </h2>
+
+	<p> Os links em HTML devem estar entre a tag &lt;a&gt;, onde usamos o atríbuto 'href' para inclusão do links em uma palavra, frase ou gif. Além disso,
+	os links podem ser locais ou externos. </p>
+	<p> Abaixo alguns exemplos de links locais e externo </p>
+
+<pre class="formatacaoAreaCodigo">
+	 
+	 Link local: 
+
+	&lt;nav&gt; 
+		&lt;a href="pasta/nomeDoArquivo.html"&gt; Clique aqui &lt;a&gt;
+	&lt;/nav&gt;
+
+</pre>
+</br>
+
+<pre class="formatacaoAreaCodigo"> 
+
+	Link externo:
+
+	&lt;nav&gt; 
+		&lt;a href=”www.facebook.com” target="_blank" &gt; Clique aqui &lt;a&gt;
+	&lt;/nav&gt;
+
+
+</pre>
+
+<p> Comentando o exemplo acima, o target="_blank" irá abrir uma nova aba no site, deixando o seu site ainda aberto.
+Além dele, existem outros atríbutos como: </p>
+
+<pre>
+<p>
+_self - Abre o documento vinculado na mesma janela / guia em que foi clicado (isso é o padrão)
+_parent - Abre o documento vinculado no quadro pai
+_top - Abre o documento vinculado no corpo inteiro da janela</p>
+</pre>
+
+
+</section>
+<footer id="rodape">
+	<p>Copyright &copy; by Nathã Correia</p>
+	<p> 2020. Todos os direitos reservados.
+</footer>
+</body> 
+</html>

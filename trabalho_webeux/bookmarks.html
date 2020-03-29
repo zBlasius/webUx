@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/_format.css">
+	<title>Explicando-o-html</title>
+
+</head>
+
+<body>
+	<div id="interface">
+		<header id="cabecalho">
+			<br>
+			<h1> Explicando o HTML</h1>
+		<figure class="fotoAbertura">
+			<img src="imagens/html3.png" title="HTML: aprendendo a linguagem de marcação" alt="Ops...">
+			<figcaption id="htmlImage">
+			<p>HTML: a linguagem de marcação</p>
+			</figcaption>
+		</figure>	
+		</header>
+		<hgroup>
+		<nav id="menu">
+			<h2>Menu Principal</h2>
+			<ul>
+				<hr>
+				<li id="Caminho1"><a href="introduction.html"
+					>Ir para o Início</a></li>
+				<hr>
+				<li id="Caminho1">Explicando o CSS</li>
+				<hr>
+				<li id="Caminho1"> <a href="header.html" >Próxima Página </a> </li>
+				<hr>
+			</ul>
+		</nav>
+		</hgroup>
+	</div>
+
+	<nav id="menu-abas">
+	<ul> 
+		<li><a href="introduction.html"> Introdução </a> </li>
+		<li><a href="structure.html"> Estruturas </a> </li>
+		<li><a href="bookmarks.html"> Marcadores </a> </li>
+		<li><a href="header.html"> cabeçalhos </a> </li>
+		<li><a href="background.html"> background </a></li>
+		<li><a href="image.html"> Imagens </a> </li>
+		<li> <a href="links.html"> Links </a> </li>
+		<li> <a href="lists.html"> Lists </a> </li>
+	</ul>
+	</nav>
+
+<section id="introducao"> 
+	<h2>4. Marcadores de Estilo</h2>
+<p>Nas versões anteriores ao HTML5, as marcações de estilo da página html eram desenvolvidas em um mesmo arquivo html. Essa prática fazia com que o código ficasse muito longo, aumentando o tamanho do arquivo para a web, além de dificultar os trabalhos de revisão, sejam eles por terceiros ou pelo próprio desenvolvedor do programa.</p>
+<p>A partir dessa versão, os estilos da página html, ou folhas de estilos, são desenvolvidos em outra linguagem: <b>CSS</b>. A linguagem CSS é responsável a partir da versão mencionada por toda formatação de estilo da página html. Ou seja, toda imagem, parágrafo, tabela e outros elementos de uma página web podem ser estilizados através do CSS.</p>
+<p>No entanto, é possível estilizar a página web através da tag &lt;style&gt; no arquivo html. Abaixo será demonstrado uma versão de formatação das tags <b>h2</b> e <b>p</b> em html e CSS, respectivamente.</p>
+<pre class="formatacaoAreaCodigo">
+<code>
+Configurando o estilo de cabeçalhos em html:
+&lt;style&gt;
+	h2{
+		color: blue;
+		text-height: bolder;
+	}
+&lt;/ style&gt;
+
+Configurando o estilo de parágrafos em html:
+&lt;style&gt;
+	p{
+		color: #dddddd;
+		text-align: justify;
+		text-indent: 20px;
+	}
+&lt;/ style&gt;
+</code>
+</pre>	
+<p>Agora, vamos demonstrar como é feita a estilização acima, porém em CSS:</p>
+<pre class="formatacaoAreaCodigo">
+<code>
+Configurando o estilo de cabeçalhos em CSS:
+h2{
+	color: blue;
+	text-height: bolder;
+}
+Configurando o estilo de parágrafos em html:
+p{
+	color: #dddddd;
+	text-align: justify;
+	text-indent: 20px;
+}
+</code>
+</pre>	
+<P>Importante destacar que, em CSS, conseguimos editar as mesmas tags em formatos diferentes. Na construção do nosso arquivo html, podemos definir as <b>"id's"</b> e <b>"class"</b> das nossas tags. Esses id's e class nos ajudam a formatar determinados campos do nosso arquivo.</P>
+<p>Por isso, se for estilizar o seu site, faça uso da linguagem CSS. Adote também como boa prática utilizar um arquivo específico para seus estilos em CSS. Esse arquivo é comumente chamado de folha de estilo. Para carregar o seu arquivo, basta digitar o seguinte comando no campo <b>head</b>: &lt;link rel="stylesheet" type="text/css" href="<b>nome da pasta</b>/<b>nome do arquivo</b>.css"&gt;</p>
+</section>
+<footer id="rodape">
+	<p>Copyright &copy; by Nathã Correia</p>
+	<p> 2020. Todos os direitos reservados.
+</footer>
+</body>
+</html>

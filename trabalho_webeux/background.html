@@ -1,0 +1,94 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/_format.css">
+	<title>Explicando-o-html</title>
+
+</head>
+
+<body>
+	<div id="interface">
+		<header id="cabecalho">
+			<br>
+			<h1> Explicando o HTML</h1>
+		<figure class="fotoAbertura">
+			<img src="imagens/html3.png" title="HTML: aprendendo a linguagem de marcação" alt="Ops...">
+			<figcaption id="htmlImage">
+			<p>HTML: a linguagem de marcação</p>
+			</figcaption>
+		</figure>	
+		</header>
+
+		<hgroup>
+		<nav id="menu">
+			<h2>Menu Principal</h2>
+			<ul>
+				<hr>
+				<li id="Caminho1"><a href="introduction.html">Ir para o Início</a></li>
+				<hr>
+				<li id="Caminho1">Explicando o CSS</li>
+				<hr>
+				<li id="Caminho1"> <a href="image.html" > Próxima Página </a></li>
+				<hr>
+			</ul>
+		</nav>
+		</hgroup>
+	</div>
+
+	<nav id="menu-abas">
+	<ul> 
+		<li ><a href="introduction.html"> Introdução </a> </li>
+		<li><a href="structure.html"> Estruturas </a> </li>
+		<li><a href="bookmarks.html"> Marcadores </a> </li>
+		<li><a href="header.html"> cabeçalhos </a> </li>
+		<li class="index"><a href="background.html"> background </a></li>
+		<li><a href="image.html"> Imagens </a> </li>
+		<li> <a href="links.html"> Links </a> </li>
+		<li> <a href="lists.html"> Lists </a> </li>
+	</ul>
+	</nav>
+
+<section id="introducao">
+<h2>6. Cores de texto e planos de fundo </h2>
+	<p>  Cores de texto.  
+	Pode ser alterada via css, com o comando “color”, exemplo:
+
+	
+<pre class="formatacaoAreaCodigo"> 
+	&lt;p id=”teste”&gt; Texto desejado &lt;p&gt;
+
+	p#teste {
+	color: red;
+	}
+
+</pre>
+
+<p>Algo a se acrescentar são as mudanças de estilo de texto, onde podemos pegar fontes disponibilizadas pelo google fonts e importar para nosso site, com um simples passo-a-passo clicando <a class="links" href="https://metring.com.br/como-utilizar-o-google-fonts" target="_blank" >aqui</a> </p>
+
+<h2> 6.2 Planos de fundo </h2>
+<p>São utilizados para modificar o fundo de algum objeto no html, podendo alterar a cor, tamanho, posição entre outras funções.
+O “background” que é utilizado pelo css possui várias derivações, em que as principais são: 
+
+<pre class="formatacaoAreaCodigo">
+
+div {
+// background-color: red;
+// background-position: right;
+// background-image: url(“imagem.png”);
+// background-size: cover;
+}
+
+</pre>
+
+<p>para mais detalhes sobre cada função, clique <a class="links" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/background" target="_blank"> aqui. </a> </p> 
+
+</p>
+</section>
+
+<footer id="rodape">
+	<p>Copyright &copy; by Nathã Correia</p>
+	<p> 2020. Todos os direitos reservados.
+</footer>
+</body>
+</html>
