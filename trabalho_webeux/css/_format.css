@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@1,521&display=swap');
+
 
 
 /*Formatando os cabeçalhos*/
@@ -31,6 +33,12 @@ h3{
 	color: #606060;
 	text-align: left;
 } 
+
+.titulo-exemplos{
+	margin-bottom: 5px;
+	font-family: "Century Gothic";
+
+}
 
 /* Formatando links */
 
@@ -228,8 +236,13 @@ footer#rodape p{
 	background-color: #7996B3;
 	padding: 0px 10px 0px 10px;
 	margin:0px auto 0px auto;
-	font-family: arial, sans-serif;
+	font-family: 'Muli', sans-serif;
 
+}
+
+.form-exemplo {
+	border-bottom: 1px solid #606060;
+	padding-bottom: 5px;
 }
 
 /*Formatando tabelas*/
