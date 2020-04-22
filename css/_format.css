@@ -1,19 +1,101 @@
-@charset "UTF-8"
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@1,521&display=swap');
 
-
+html {
+	scroll-behavior: smooth;
+}
 
 /*Formatando os cabeçalhos*/
-div#interface{
-	margin: -20px auto 0px auto;
+#cabecalho{;
 	background-color: #a7ccc2;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-	padding: 10px 10px 10px 10px;
+	padding: 10px;
 	background-size: 100%;
 }
+
+#cabecalho .conteudo-cabecalho {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*Formatando o menu*/
+nav#menu {
+	width: 20%;
+	display: block;
+	font-family: "Century Gothic";
+	font-size: 14px;
+	background-size: 100%;
+}
+nav#menu ul{
+	font-family: "Century Gothic";
+	list-style: none;
+	text-transform: uppercase;
+	color: white;
+	background-size: 100%;
+}
+nav#menu li{
+	font-family: "Century Gothic";
+	text-align: center;
+	padding: 10px;
+	background-color: #c3c3c3;
+	transition: background-color .7s;
+
+}
+nav#menu li:hover{
+	background-color: #2e8abf;
+}
+nav#menu h2{
+	display: none;
+}
+
+nav#menu-abas{
+	margin-top: 30px;
+	font-family: 'Lato', sans-serif;
+	font-size:12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav#menu-abas ul{
+	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+nav#menu-abas li {
+	margin: 5px;
+	width: 70px;
+	font-weight: bolder;
+	border-radius: 50px;
+	display: inline-block;
+	padding: 15px 20px;
+	cursor: pointer;
+	transition: background-color .7s;
+}
+
+.active {
+	background-color:#FF8C00 !important;
+	color: #fff !important;
+}
+
+nav#menu-abas li:hover{
+	background-color:#FF8C00;
+}
+
+nav#menu-abas li.index{
+	background-color:red;
+}
+
+nav#menu-abas a {
+	color:#606060;
+}
+
+
 h1{
 	font-family: 'Indie Flower', cursive;
 	font-size: 38pt;
@@ -66,28 +148,22 @@ html{
 
 figure.fotoAbertura {
 	position: relative;
-	left: 300px;
-	background-size: 100%;
 	box-sizing: border-box;
 	
 }
 
-figure.fotoAbertura img{
-	width: 50%;
-	height: 50%;
-	border:1px black solid;
-
-}
-
 figure.fotoAbertura figcaption{
+	box-sizing: border-box;
     opacity: 0;
-    position: absolute;
-    top: 108px;
+	position: absolute;
+	bottom: 4px;
+	right: 0;
+	left: 0;
     background-color: rgba(0,0,0,0.1);
-    color: white;
-    padding: 1%;
-    width: 60%;
-    height: 45px;
+	color: white;
+	padding-left: 10px;
+    width: 100%;
+    height: 60px;
     transition: opacity 0.5s;
     background-size: 10%;
 
@@ -129,74 +205,7 @@ a{
 	text-decoration: none;
 }
 
-/*Formatando o menu*/
-nav#menu {
-	display: block;
-	font-family: "Century Gothic";
-	font-size: 14px;
-	text-shadow: 2px black;
-	text-underline-position: right;
-	background-size: 100%;
-}
-nav#menu ul{
-	font-family: "Century Gothic";
-	list-style: none;
-	text-transform: uppercase;
-	color: white;
-	position: absolute;
-	top:-15px;
-	right: 1150px; 
-	background-size: 100%;
-}
-nav#menu li{
-	font-family: "Century Gothic";
-	text-align: center;
-	padding: 10px;
-	background-color: #606060;
-	transition: background-color 1.2s;
-	background-size: 100%;
 
-}
-nav#menu li:hover{
-	background-color: #2e8abf;
-}
-nav#menu h2{
-	display: none;
-}
-
-nav#menu-abas{
-	font-family: 'Lato', sans-serif;
-	font-size:12px;
-}
-
-nav#menu-abas ul{
-	text-align: center;
-	position: relative;
-}
-
-nav#menu-abas li {
-	font-weight: bolder;
-	border:.5px solid #606060;
-	background-color:#cecece;
-	width: 70px;
-	display: inline-block;
-	padding:10px;
-	margin:-10px 5px 0px 0px;
-	transition: background-color 1s;
-}
-
-nav#menu-abas li:hover{
-	background-color:#FF8C00;
-	
-}
-
-nav#menu-abas li.index{
-	background-color:red;
-}
-
-nav#menu-abas a {
-	color:black;
-}
 /*Formatando as seções*/
 
 section#introducao {
@@ -231,9 +240,10 @@ footer#rodape p{
 /*Formatando áreas de código*/
 .formatacaoAreaCodigo{
 	display: block;
-	width: 605px;
+	color: #fff;
+	width: 100%;
 	font-size: 14px;
-	background-color: #7996B3;
+	background-color: darkslategray;
 	padding: 0px 10px 0px 10px;
 	margin:0px auto 0px auto;
 	font-family: 'Muli', sans-serif;

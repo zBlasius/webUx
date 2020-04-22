@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/_format.css">
+	<title>Explicando-o-html</title>
+
+</head>
+
+<body>
+	<header id="cabecalho">
+		<h1> Explicando o HTML</h1>
+		<div class="conteudo-cabecalho">
+			<!-- <nav id="menu">
+				<h2>Menu Principal</h2>
+				<ul>
+					<hr>
+					<li id="Caminho1"><a href="introduction.html">Ir para o Início</a></li>
+					<hr>
+					<li id="Caminho1">Explicando o CSS</li>
+					<hr>
+					<li id="Caminho1"> <a href="structure.html"> Próxima Página </a></li>
+					<hr>
+				</ul>
+			</nav> -->
+			<figure class="fotoAbertura">
+				<img src="imagens/html3.png" alt="Ops...">
+				<figcaption id="htmlImage" >
+				<p>HTML: a linguagem de marcação</p>
+				</figcaption>
+			</figure>
+		</div>
+	</header>
+	<article id="principal">
+		
+		<nav id="menu-abas">
+			<ul> 
+				<a href="introduction.html"> <li class="active"> Introdução </li> </a> 
+				<a href="structure.html"><li> Estruturas </li> </a> 
+				<a href="bookmarks.html"><li> Marcadores </li> </a> 
+				<a href="header.html"><li> Cabeçalhos  </li> </a>
+				<a href="background.html"><li> Background </li> </a>
+				<a href="image.html"> <li> Imagens </li> </a>
+				<a href="links.html"> <li> Links </li> </a>
+				<a href="lists.html"><li>  Lists </li> </a> 
+				<a href="input.html"> <li> Formulários </li> </a>
+			</ul>
+		</nav>
+	</article>	
+
+	<section id="introducao">
+		<h2>1. O que é <en>HTML</en></h2>
+		<p><b>HTML (Hyper Text Markup Language</b> é uma linguagem de marcação de texto muito utilizada para desenvolvimento de websites. Foi desenvolvida pensando na facilidade de o usuário entendê-la e conseguir desenvolver seus próprios sites. A linguagem HTML expressa informações também para sistemas e demais programas, através de <b>tags</b> específicas que atribuem valor semântico para o que se quer transmitir.</p>
+		<h2> 1.1 Características da linguagem HTML</h2>
+		<p> HTML é uma linguagem de marcação cuja principal finalidade é o desenvolvimento de websites. O termo <b>"marcação"</b> é devido a utilização dos símbolos <b>&lt; &gt; e &lt;/ &gt;</b> na execução dos seus códigos. Esses sinais são conhecidos como <b>tags</b>, que são as marcações que informamos para o documento em html para executarmos os comandos desejados, como criação de cabeçalhos, títulos, tabelas entre outras funcionalidades.</p>
+		<h2>2. Tags ou marcações HTML</h2>
+		<p> Tag é um código utilizado para marcar o início e, onde for requerido, o fim de um elemento HTML. Existem tags de abertura <b>(&lt; &gt;)</b> e de fechamento <b>(&lt;/ &gt;)</b>. Uma tag de abertura é representada por um sinal de <b>menor (&lt;)</b> e de <b>maior (&gt;)</b>. A tag de fechamento se diferencia da tag de abertura apenas por conta de uma barra (/).
+		<p> A combinação de tags e outros elementos textuais constituem a marcação. De modo resumido, podemos dizer que <b>marcação</b> é o conjunto de instruções que envolvem tags, textos, símbolos e outros elementos que possibilitam a geração das informações em um ambiente web.</p>
+		<p>Logo abaixo, temos um exemplo de como construímos algumas tags de abertura e fechamento em arquivo html.</p>
+	<pre class="formatacaoAreaCodigo">
+	<code>
+&lt;h3&gt;Aqui está um exemplo de fechamendo de cabeçalho, identificado pela letra H 
+(de header) seguido do número de hierarquia.&lt;/ h3&gt;
+
+&lt;p&gt;Esse é um exemplo de abertura e fechamento de um parágrafo.&lt;/ p&gt;
+
+&lt;meta charset="utf-8"/&gt;
+
+&lt;p&gt;Podemos indicar o seu término dessa tag com uma (/) no final. 
+Essa barra não é obrigatória.&lt;/ p&gt;
+		</code>
+		</pre>
+	</section>
+	<footer id="rodape">
+		<p>Copyright &copy; by Erik Tomelin, Gustavo Blasius, Nathã Correia e Otavio Stein.</p>
+		<p> 2020. Todos os direitos reservados.
+	</footer>
+</body>
+</html>

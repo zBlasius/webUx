@@ -1,0 +1,76 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/_format.css">
+	<title>Explicando-o-html</title>
+
+</head>
+
+<body>
+	<header id="cabecalho">
+		<h1> Explicando o HTML</h1>
+		<div class="conteudo-cabecalho">
+			<!-- <nav id="menu">
+				<h2>Menu Principal</h2>
+				<ul>
+					<hr>
+					<li id="Caminho1"><a href="introduction.html">Ir para o Início</a></li>
+					<hr>
+					<li id="Caminho1">Explicando o CSS</li>
+					<hr>
+					<li id="Caminho1"> <a href="structure.html"> Próxima Página </a></li>
+					<hr>
+				</ul>
+			</nav> -->
+			<figure class="fotoAbertura">
+				<img src="imagens/html3.png" alt="Ops...">
+				<figcaption id="htmlImage">
+				<p>HTML: a linguagem de marcação</p>
+				</figcaption>
+			</figure>
+		</div>
+	</header>
+	<article id="principal">
+		
+		<nav id="menu-abas">
+			<ul> 
+				<a href="introduction.html"> <li> Introdução </li> </a> 
+				<a href="structure.html"><li> Estruturas </li> </a> 
+				<a href="bookmarks.html"><li> Marcadores </li> </a> 
+				<a href="header.html"><li class="active"> Cabeçalhos  </li> </a>
+				<a href="background.html"><li> Background </li> </a>
+				<a href="image.html"> <li> Imagens </li> </a>
+				<a href="links.html"> <li> Links </li> </a>
+				<a href="lists.html"><li>  Lists </li> </a> 
+				<a href="input.html"> <li> Formulários </li> </a>
+			</ul>
+		</nav>
+	</article>
+
+<section id="introducao"> 
+	<h2>5. A estrutura head e header (cabeçalhos)</h2>
+<p>A tag <b>head</b>, assim como a tag <b>header</b>, significam cabeçalhos. No entanto, a tag <b>head</b> define os comportamentos globais do arquivo html, como importação de arquivos de estilo da página geral, definição da linguagem do arquivo, entre outras. Já a tag header define as propriedades de um determinado cabeçalho, onde são inseridos seus títulos, textos, imagens, menus entre outros elementos. Logo abaixo, temos um pedaço de código gerado em html para explicar melhor essa distinção.</p>
+<pre class="formatacaoAreaCodigo">
+<code>
+&lt;head&gt;
+  &lt;meta charset="utf-8"/&gt;
+  &lt;title&gt; título-da-pagina-html-no-navegador&lt;/ title&gt;
+&lt;/ head&gt;
+&lt;body&gt;
+   &lt;div id="interface"&gt;
+   &lt;header id="principal"&gt;
+      &lt;h1&gt;Cabeçalho&lt;/ h1&gt;
+      &lt;p&gt;Parágrafo&lt;/ p&gt;
+   &lt;/ header&gt;
+   &lt;/ div&gt;
+&lt;/ body&gt;
+</code>	
+</pre>
+</section>
+<footer id="rodape">
+	<p>Copyright &copy; by Erik Tomelin, Gustavo Blasius, Nathã Correia e Otavio Stein.</p>
+	<p> 2020. Todos os direitos reservados.
+</footer>
+</body>
+</html>

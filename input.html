@@ -8,47 +8,45 @@
 </head>
 
 <body>
-	<div id="interface">
-		<header id="cabecalho">
-			<br>
-			<h1> Explicando o HTML</h1>
-		<figure class="fotoAbertura">
-			<img src="imagens/html3.png" title="HTML: aprendendo a linguagem de marcação" alt="Ops...">
-			<figcaption id="htmlImage">
-			<p>HTML: a linguagem de marcação</p>
-			</figcaption>
-		</figure>	
-		</header>
-
-		<hgroup>
-		<nav id="menu">
-			<h2>Menu Principal</h2>
-			<ul>
-				<hr>
-				<li id="Caminho1"><a href="introduction.html">Ir para o Início</a></li>
-				<hr>
-				<li id="Caminho1">Explicando o CSS</li>
-				<hr>
-				<li id="Caminho1"> <a href="image.html" > Próxima Página </a></li>
-				<hr>
+	<header id="cabecalho">
+		<h1> Explicando o HTML</h1>
+		<div class="conteudo-cabecalho">
+			<!-- <nav id="menu">
+				<h2>Menu Principal</h2>
+				<ul>
+					<hr>
+					<li id="Caminho1"><a href="introduction.html">Ir para o Início</a></li>
+					<hr>
+					<li id="Caminho1">Explicando o CSS</li>
+					<hr>
+					<li id="Caminho1"> <a href="structure.html"> Próxima Página </a></li>
+					<hr>
+				</ul>
+			</nav> -->
+			<figure class="fotoAbertura">
+				<img src="imagens/html3.png" alt="Ops...">
+				<figcaption id="htmlImage">
+				<p>HTML: a linguagem de marcação</p>
+				</figcaption>
+			</figure>
+		</div>
+	</header>
+	<article id="principal">
+		
+		<nav id="menu-abas">
+			<ul> 
+				<a href="introduction.html"> <li> Introdução </li> </a> 
+				<a href="structure.html"><li> Estruturas </li> </a> 
+				<a href="bookmarks.html"><li> Marcadores </li> </a> 
+				<a href="header.html"><li> Cabeçalhos  </li> </a>
+				<a href="background.html"><li> Background </li> </a>
+				<a href="image.html"> <li> Imagens </li> </a>
+				<a href="links.html"> <li> Links </li> </a>
+				<a href="lists.html"><li>  Lists </li> </a> 
+				<a href="input.html"> <li class="active"> Formulários </li> </a>
 			</ul>
 		</nav>
-		</hgroup>
-	</div>
-
-	<nav id="menu-abas">
-	<ul> 
-		<li ><a href="introduction.html"> Introdução </a> </li>
-		<li> <a href="structure.html"> Estruturas </a> </li>
-		<li> <a href="bookmarks.html"> Marcadores </a> </li>
-		<li> <a href="header.html"> cabeçalhos </a> </li>
-		<li> <a href="background.html"> background </a></li>
-		<li> <a href="image.html"> Imagens </a> </li>
-		<li> <a href="links.html"> Links </a> </li>
-		<li> <a href="lists.html"> Lists </a> </li>
-		<li> <a href="input.html"> Formulários </a> </li>
-	</ul>
-	</nav>
+	</article>
 
 <section id="introducao">
 
@@ -59,7 +57,7 @@
 	
 	<h3> Exemplo 1 </h3>
 	<pre class="formatacaoAreaCodigo">
-
+	
 	&lt;form>
 		&lt;label for="fname"> teste &lt;/label> 
 		&lt;input type="text" id="fname">
@@ -76,7 +74,6 @@ Isso é possível devido ao label, que está configurado para acessar o input ao
 
 	<h3> Exemplo 2 </h3>
 	<pre class="formatacaoAreaCodigo"> 
-
 	&lt;form> 
 		&lt;label for="fnumber"> Digite um NÚMERO: &lt;/label>
 		&lt;input type="number" id="fnumber" >
@@ -93,7 +90,6 @@ Isso é possível devido ao label, que está configurado para acessar o input ao
 
 	<h3> Exemplo 3 </h3>
 	<pre class="formatacaoAreaCodigo"> 
-
 	&lt;form> 
 		&lt;label for="imale"> Masculino &lt;/label>
 		&lt;input type="radio" id="imale" name="nradio" value="male" checked> </br>
@@ -117,17 +113,16 @@ Isso é possível devido ao label, que está configurado para acessar o input ao
 	<p> A tag select te dará várias opções para escolha, e todas as escolhas são chamadas de options. </br> Exemplos: </p>
 
 	<pre class="formatacaoAreaCodigo"> 
-
-		&lt;select name="estado" id="estado"> 
-			&lt;optgroup text-align="justify" label="Estado">
-				&lt;option> Guaramirim &lt;/option>
-				&lt;option> Jaraguá do sul &lt;/option>
-				&lt;option> Joinville &lt;/option>
-				&lt;option> Massaranduba &lt;/option>
-				&lt;option> São joão do itaperiú &lt;/option>
-				&lt;option> Blumenau &lt;/option>
-			&lt;/optgroup>
-		&lt;/select>
+	&lt;select name="estado" id="estado"> 
+		&lt;optgroup text-align="justify" label="Estado">
+			&lt;option> Guaramirim &lt;/option>
+			&lt;option> Jaraguá do sul &lt;/option>
+			&lt;option> Joinville &lt;/option>
+			&lt;option> Massaranduba &lt;/option>
+			&lt;option> São joão do itaperiú &lt;/option>
+			&lt;option> Blumenau &lt;/option>
+		&lt;/optgroup>
+	&lt;/select>
 	</pre>
 
 	<h4 class="titulo-exemplos"> RESULTADO </h4>
@@ -145,7 +140,7 @@ Isso é possível devido ao label, que está configurado para acessar o input ao
 
 </section>
 <footer id="rodape">
-	<p>Copyright &copy; by Nathã Correia</p>
+	<p>Copyright &copy; by Erik Tomelin, Gustavo Blasius, Nathã Correia e Otavio Stein.</p>
 	<p> 2020. Todos os direitos reservados.
 </footer>
 </body>
